@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+font-family: 'Roboto', sans-serif; font-weight: 100;
+font-size: 18px;
+background-color: MintCream;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+#wrapper{
+  padding-top: 10px;
+  min-width: 900px;
+}
+
+#nav {
+  float: right;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline;
+  padding: 6px;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: #29292a;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#main {
+  width: 100%;
+  clear: both;
+  margin: 90px 0; 
+}
+
+.circles {
+  width: 520px;
+  text-align: center;
+  height: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+ }
+
+#hotCircle {
+  float: left;
+  background-color: orange;
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 200px;
+  height: 200px;
+  color: white;
+  text-align: center;
+}
+
+#Hot, #Cold {
+  margin-top: 90px;
+  font-size: 25px;
+}
+
+#coldCircle {
+  float: left;
+  border: 3px solid white;
+  background-color: DarkTurquoise;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  color: white;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.input {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#inputBox {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#newGame, #submitButton{
+  background-color: cadetblue;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+#message {
+  font-weight: 400;
+  height: 30px;
+}
+
+#congrats {
+  font-size: 50px;
+  color: tomato;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  display: none;
+}
