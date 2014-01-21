@@ -5,7 +5,8 @@ $(document).ready(function() {
 	var randomNumber = Math.floor(Math.random() * 101);
     console.log(randomNumber);
 
-  $('#submitButton').click(function(){
+
+        $('#submitButton').click(function(){
           var input = $('#guess').val();
           var guess=Math.abs(randomNumber - input);
           
@@ -13,34 +14,43 @@ $(document).ready(function() {
           if ((input == '') || (isNaN(input)) || (input < 1) || (input > 100)) { 
                 $('#message').html("Please put numbers 1-100");
               }
-          else if(guess <= 30 && guess >= 11) {
-            		$("#message").html("Lukewarm");
-                $("#hotCircle").animate({backgroundColor: "#FF6600"}, 1000);
-              }
-          else if (guess > 31){
-                $("#message").html("Cold");
-                $("#coldCircle").animate({backgroundColor: "navy"}, 1000);
-              }
-          else if (guess < 10 && guess >= 5){
-          			$("#message").html("Getting Warmer!");
-                $("#hotCircle").animate({backgroundColor: "#FF4500"}, 1000);
-              }
-          else if (guess < 4 && guess >= 1){
-                $("#message").html("Getting Hot!");
-                $("#hotCircle").animate({backgroundColor: "red"}, 1000);
-              }
+
           else if (guess == 0){
-                $("#message").html("You guessed it right!!").effect("pulsate", {times:4}, 2000);;
+                $("#message").html("You guessed it right!!  Want to play another game?").effect("pulsate", {times:4}, 2000);;
                 $("#hotCircle").animate({backgroundColor: "#FF6347"}, 1000);
                 $("#coldCircle").animate({backgroundColor: "#4169E1"}, 1000);
                 $("#congrats").show(1000);
               }
+
+          else if (guess < 6 && guess >= 1){
+                $("#message").html("Really Hot!");
+                $("#hotCircle").animate({backgroundColor: "red"}, 1000);
+              }
+
+          else if (guess < 11 && guess >= 6){
+                $("#message").html("Getting Warmer!");
+                $("#hotCircle").animate({backgroundColor: "#FF4500"}, 1000);
+              }
+
+          else if(guess < 15 && guess >= 11) {
+            		$("#message").html("Lukewarm");
+                $("#hotCircle").animate({backgroundColor: "#FF6600"}, 1000);
+              }
+          
+          else {
+                $("#message").html("Cold");
+                $("#coldCircle").animate({backgroundColor: "navy"}, 1000);
+              }
+         
+          
+          
               
               $('#prevGuess').append(input).append(', ');
               $("#hotCircle").css({backgroundColor: "orange"});
               $("#coldCircle").css({backgroundColor: "DarkTurquoise"}); 
               $('#guess').val('');
 	});
+
 
 $('#newGame').click(function(){
     randomNumber = Math.floor(Math.random() * 101);
