@@ -1,28 +1,28 @@
-        
+	
 $(document).ready(function() {
 
-        //Generate a random number between 1 and 100
-        var randomNumber = Math.floor(Math.random() * 101);
+	//Generate a random number between 1 and 100
+	var randomNumber = Math.floor(Math.random() * 101);
     console.log(randomNumber);
 
   $('#submitButton').click(function(){
           var input = $('#guess').val();
           var guess=Math.abs(randomNumber - input);
-      
+          
 
-          if ((input == '') || (isNaN(input)) || (input < 1) || (input > 100)) {  
+          if ((input == '') || (isNaN(input)) || (input < 1) || (input > 100)) { 
                 $('#message').html("Please put numbers 1-100");
               }
           else if(guess <= 10 && guess >= 6) {
-                            $("#message").html("Getting Colder");
+            		$("#message").html("Getting Warmer");
                 $("#coldCircle").animate({backgroundColor: "#1E90FF"}, 1000);
               }
           else if (guess > 10){
-                $("#message").html("Getting Super Cold");
+                $("#message").html("Super Cold");
                 $("#coldCircle").animate({backgroundColor: "navy"}, 1000);
               }
           else if (guess < 6 && guess >= 3){
-                                  $("#message").html("Getting Hotter!");
+          			$("#message").html("Getting Hotter!");
                 $("#hotCircle").animate({backgroundColor: "#FF4500"}, 1000);
               }
           else if (guess < 3 && guess >= 1){
@@ -34,12 +34,13 @@ $(document).ready(function() {
                 $("#hotCircle").animate({backgroundColor: "#FF6347"}, 1000);
                 $("#coldCircle").animate({backgroundColor: "#4169E1"}, 1000);
                 $("#congrats").show(1000);
-
               }
-              $('#guess').val('');
+              
+              $('#prevGuess').append(input).append(', ');
               $("#hotCircle").css({backgroundColor: "orange"});
               $("#coldCircle").css({backgroundColor: "DarkTurquoise"}); 
-        });
+              $('#guess').val('');
+	});
 
 $('#newGame').click(function(){
     randomNumber = Math.floor(Math.random() * 101);
@@ -54,3 +55,5 @@ $('#newGame').click(function(){
 
 
 });
+
+	

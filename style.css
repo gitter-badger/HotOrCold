@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-        display: block;
+	display: block;
 }
 body {
-        line-height: 1;
+	line-height: 1;
 font-family: 'Roboto', sans-serif; font-weight: 100;
 font-size: 18px;
 background-color: MintCream;
 }
 
 ol, ul {
-        list-style: none;
+	list-style: none;
 }
 blockquote, q {
-        quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-        content: '';
-        content: none;
+	content: '';
+	content: none;
 }
 
 
@@ -85,18 +85,19 @@ a:hover {
 }
 
 .circles {
-  width: 520px;
+  width: 540px;
   text-align: center;
   height: 300px;
   margin: 0 auto;
-  padding-top: 50px;
+ padding-top: 50px;
  }
 
 #hotCircle {
   float: left;
   background-color: orange;
+  font-weight: 100;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 10px solid white;
   width: 200px;
   height: 200px;
   color: white;
@@ -110,7 +111,8 @@ a:hover {
 
 #coldCircle {
   float: left;
-  border: 3px solid white;
+  font-weight: 100;
+  border: 10px solid white;
   background-color: DarkTurquoise;
   border-radius: 50%;
   width: 200px;
@@ -146,10 +148,9 @@ a:hover {
 }
 
 #congrats {
-  font-size: 50px;
+  font-weight: 100;
   color: tomato;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 20px;
+  font-size: 50px;
   display: none;
+  margin-bottom: 20px;
 }
