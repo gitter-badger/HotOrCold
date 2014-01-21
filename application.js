@@ -1,8 +1,8 @@
-	
+        
 $(document).ready(function() {
 
-	//Generate a random number between 1 and 100
-	var randomNumber = Math.floor(Math.random() * 101);
+        //Generate a random number between 1 and 100
+        var randomNumber = Math.floor(Math.random() * 101);
     console.log(randomNumber);
 
   $('#submitButton').click(function(){
@@ -14,7 +14,7 @@ $(document).ready(function() {
                 $('#message').html("Please put numbers 1-100");
               }
           else if(guess <= 10 && guess >= 6) {
-            		$("#message").html("Getting Colder");
+                            $("#message").html("Getting Colder");
                 $("#coldCircle").animate({backgroundColor: "#1E90FF"}, 1000);
               }
           else if (guess > 10){
@@ -22,7 +22,7 @@ $(document).ready(function() {
                 $("#coldCircle").animate({backgroundColor: "navy"}, 1000);
               }
           else if (guess < 6 && guess >= 3){
-          			$("#message").html("Getting Hotter!");
+                                  $("#message").html("Getting Hotter!");
                 $("#hotCircle").animate({backgroundColor: "#FF4500"}, 1000);
               }
           else if (guess < 3 && guess >= 1){
@@ -39,7 +39,7 @@ $(document).ready(function() {
               $('#guess').val('');
               $("#hotCircle").css({backgroundColor: "orange"});
               $("#coldCircle").css({backgroundColor: "DarkTurquoise"}); 
-	});
+        });
 
 $('#newGame').click(function(){
     randomNumber = Math.floor(Math.random() * 101);
@@ -54,8 +54,3 @@ $('#newGame').click(function(){
 
 
 });
-
-	
-
-
-
