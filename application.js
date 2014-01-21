@@ -13,15 +13,15 @@ $(document).ready(function() {
           if ((input == '') || (isNaN(input)) || (input < 1) || (input > 100)) { 
                 $('#message').html("Please put numbers 1-100");
               }
-          else if(guess <= 10 && guess >= 6) {
+          else if(guess <= 20 && guess >= 10) {
             		$("#message").html("Getting Warmer");
-                $("#coldCircle").animate({backgroundColor: "#1E90FF"}, 1000);
+                $("#hotCircle").animate({backgroundColor: "#FF6600"}, 1000);
               }
-          else if (guess > 10){
+          else if (guess > 21){
                 $("#message").html("Super Cold");
                 $("#coldCircle").animate({backgroundColor: "navy"}, 1000);
               }
-          else if (guess < 6 && guess >= 3){
+          else if (guess < 10 && guess >= 3){
           			$("#message").html("Getting Hotter!");
                 $("#hotCircle").animate({backgroundColor: "#FF4500"}, 1000);
               }
