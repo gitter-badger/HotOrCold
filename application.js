@@ -14,7 +14,7 @@ $(document).ready(function() {
                 $('#message').html("Please put numbers 1-100");
               }
           else if(guess <= 20 && guess >= 10) {
-            		$("#message").html("Getting Warmer");
+            		$("#message").html("Lukewarm");
                 $("#hotCircle").animate({backgroundColor: "#FF6600"}, 1000);
               }
           else if (guess > 21){
@@ -22,7 +22,7 @@ $(document).ready(function() {
                 $("#coldCircle").animate({backgroundColor: "navy"}, 1000);
               }
           else if (guess < 10 && guess >= 3){
-          			$("#message").html("Getting Hotter!");
+          			$("#message").html("Getting Warmer!");
                 $("#hotCircle").animate({backgroundColor: "#FF4500"}, 1000);
               }
           else if (guess < 3 && guess >= 1){
