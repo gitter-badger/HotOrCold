@@ -28,7 +28,7 @@ $(document).ready(function() {
               }
 
           else if (guess < 11 && guess >= 6){
-                $("#message").html("Getting Warmer!");
+                $("#message").html("Hot");
                 $("#hotCircle").animate({backgroundColor: "#FF4500"}, 1000);
               }
 
