@@ -16,7 +16,7 @@ $(document).ready(function() {
               }
 
           else if (guess == 0){
-                $("#message").html("You guessed it right!!  Want to play another game?").effect("pulsate", {times:4}, 2000);;
+                $("#message").html("You guessed it right!!").effect("pulsate", {times:4}, 2000);;
                 $("#hotCircle").animate({backgroundColor: "#FF6347"}, 1000);
                 $("#coldCircle").animate({backgroundColor: "#4169E1"}, 1000);
                 $("#congrats").show(1000);
